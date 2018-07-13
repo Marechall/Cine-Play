@@ -1,0 +1,124 @@
+{% load static % }
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+.principal {
+    background-image: url(pipoca.jpg);
+    background-size:cover;
+    
+
+}
+
+header, nav, section, aside, footer {
+    background-color: rgba(0,0,0, .8);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+header {
+    height: 200px;
+    background-image: url(banner2.jpg);
+    background-position: center;
+    background-repeat:  no-repeat;
+}
+nav {
+    height: 50px;
+    background-color: rgba(0,0,0, .8);
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    font-family: forte;
+    
+}
+
+aside {
+    height: 600px;
+    
+}
+
+section {
+    height: 900px
+}
+
+footer {
+    height: 80px
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    align-content: center;
+    animation-name: slides;
+    background-origin:content-box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    width: 1200px;
+    height: 600px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color: transparent;
+    
+}
+
+@keyframes slides {
+    25%{
+        opacity: 1;
+        transform: scale(1,1)
+    }
+    50%{
+        opacity: 50%;
+    }
+}
+
+.slide:nth-last-child(1){
+    animation-delay: 5s;
+}
+.slide:nth-last-child(2){
+   animation-delay: 10s; 
+}
+
+.slide:nth-last-child(3){
+    animation-delay: 15s;
+}
+
+.ButtonNav1,.ButtonNav2,.ButtonNav3,.ButtonNav4{
+    font-family: candara;
+    font-size: 25px;
+    width: 260px;
+    height: 40px;
+    color: #710202;
+    margin-top: -5px;
+    border-radius: 30px;
+    margin-left: 20px;
+    border: 5px solid;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.ButtonNav1:hover{
+    background-color: gray;
+    padding-right: 10px;
+}
+.ButtonNav2:hover{
+    background-color: gray;
+    padding-right: 10px;
+}
+.ButtonNav3:hover{
+    background-color: gray;
+    padding-right: 10px;
+}
+.ButtonNav4:hover{
+    background-color: gray;
+    padding-right: 10px;
+}
