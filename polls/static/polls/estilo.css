@@ -59,9 +59,9 @@ footer {
     align-content: center;
     animation-name: slides;
     background-origin:content-box;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
     width: 1200px;
     height: 600px;
@@ -74,23 +74,24 @@ footer {
 @keyframes slides {
     25%{
         opacity: 1;
-        transform: scale(1,1)
+        transform: scale(0.97,1)
     }
     50%{
-        opacity: 50%;
+        opacity: 0;
     }
 }
 
 .slide:nth-last-child(1){
-    animation-delay: 5s;
+    animation-delay: 0s;
 }
 .slide:nth-last-child(2){
-   animation-delay: 10s; 
+   animation-delay: 5s; 
 }
 
 .slide:nth-last-child(3){
-    animation-delay: 15s;
+    animation-delay: 10s;
 }
+
 
 .ButtonNav1,.ButtonNav2,.ButtonNav3,.ButtonNav4{
     font-family: candara;
